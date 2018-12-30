@@ -5,6 +5,8 @@ var toasters = [
   'https://media.giphy.com/media/71loenMVZGgN2/giphy.gif',
   'https://media.giphy.com/media/VWVthRb92CS8E/giphy.gif',
   'https://media.giphy.com/media/71loenMVZGgN2/giphy.gif',
+  'https://media.giphy.com/media/7wUoPcTuC166s/giphy.gif',
+  'https://media.giphy.com/media/EAvAOsVRNphfO/giphy.gif',
 ];
 
 client.on('ready', () => {
