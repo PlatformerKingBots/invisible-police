@@ -1,0 +1,12 @@
+{
+  "name": "toaster",
+  "description": "A toaster. What do you expect me to say here.",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "discord.js": "^11.2.1"
+  }
+}
