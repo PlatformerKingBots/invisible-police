@@ -12,7 +12,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-  if (message.content.toLowerCase().startsWith('TOASTER')){
+  if (message.content.startsWith('TOASTER')){
     message.channel.send({file: toasters[Math.floor(Math.random() * toasters.length)]});
   }
 });
