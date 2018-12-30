@@ -12,7 +12,9 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-  
+  if (message.content.toLowerCase().startsWith('TOASTER')){
+    message.channel.send({file: toasters[Math.floor(Math.random() * toasters.length)]});
+  }
 });
 
 client.login('NTI4NzcxMDA5MTUxNjMxMzYw.DwnIYA.dET4n2yb-hCcP_jOQMRw3c722pU');
