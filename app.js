@@ -14,6 +14,7 @@ client.on('typingStart', (channel, user) => {
       avatar_url: user.avatarURL
     },
     description: ':rage: '+ user.tag+ ' is typing while offline!!! :rage:'
-}});
+  }});
+});
 
 client.login(process.env.token);
