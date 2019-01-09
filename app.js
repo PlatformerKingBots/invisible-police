@@ -1,8 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-
-
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
@@ -13,6 +11,7 @@ client.on('typingStart', (channel, user) => {
       name: user.tag,
       avatar_url: user.avatarURL
     },
+    color: 0xf42225,
     description: ':rage: '+ user.tag+ ' is typing while offline!!! :rage:'
   }});
 });
