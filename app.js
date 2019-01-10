@@ -6,7 +6,7 @@ client.on('ready', () => {
 });
 
 client.on('typingStart', (channel, user) => {
-  if (user.presence === 'offline') {
+  if (user.presence.status == 'offline') {
   channel.send({embed:{
     author: {
       name: user.tag,
