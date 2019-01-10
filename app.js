@@ -10,7 +10,7 @@ client.on('typingStart', (channel, user) => {
   channel.send({embed:{
     author: {
       name: user.tag,
-      avatar_url: user.avatarURL
+      icon_url: user.avatarURL
     },
     color: 0xf42225,
     description: ':rage: '+ user.tag+ ' is typing while offline!!! :rage:'
