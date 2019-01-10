@@ -6,6 +6,7 @@ client.on('ready', () => {
 });
 
 client.on('typingStart', (channel, user) => {
+  if (user.presence === 'offline') {
   channel.send({embed:{
     author: {
       name: user.tag,
@@ -14,6 +15,7 @@ client.on('typingStart', (channel, user) => {
     color: 0xf42225,
     description: ':rage: '+ user.tag+ ' is typing while offline!!! :rage:'
   }});
+  }
 });
 
 client.login(process.env.token);
